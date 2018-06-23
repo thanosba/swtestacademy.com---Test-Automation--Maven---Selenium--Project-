@@ -1,4 +1,4 @@
-# swtestacademy.com---Test-Automation--Maven---Selenium--TestNG-Project-
+# swtestacademy.com---Test-Automation--Maven---Selenium--TestNG--Project-
 
 Automation testing of ''swtestacademy'' website. 
 
