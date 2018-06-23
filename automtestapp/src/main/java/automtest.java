@@ -13,8 +13,6 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-
-
 public class automtest {
 
     static WebDriver driver;
@@ -37,7 +35,7 @@ public class automtest {
         assertTrue(isElementPresent(By.xpath(("//h1[contains(., 'Software Testing Tutorials by Software Test Academy')]"))));
         driver.findElement(By.className("fusion-text"));
         waitForLoad(driver);
-        //verify meny content
+        //verify menu content
         driver.findElement(By.xpath("//a[contains(.,'About')]")).click();
         driver.findElement(By.xpath("//a[contains(.,'Home')]")).click();
         driver.findElement(By.xpath("//a[contains(.,'Contact')]")).click();
@@ -61,7 +59,7 @@ public class automtest {
         driver.findElement(By.xpath("//*[@id='wpcf7-f11-p18-o1']/form/p[5]/input")).click();
         Thread.sleep(8000);
 
-        //Verify error messages
+        //Verify errors
         assertTrue(isElementPresent(By.xpath("//*[@id='wpcf7-f11-p18-o1']/form/div[2]")));
         assertTrue(isElementPresent(By.xpath("//*[@id='wpcf7-f11-p18-o1']/form/p[1]/span/span")));
     }
